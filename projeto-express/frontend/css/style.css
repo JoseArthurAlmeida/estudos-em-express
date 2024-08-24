@@ -1,0 +1,58 @@
+body {
+	width: 500px;
+	margin: 20px auto;
+	padding: 5px 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.curso {
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0;
+	border-bottom: 1px dashed #eee;
+}
+
+.botao-adicao {
+	position: fixed;
+	right: 5rem;
+	bottom: 5rem;
+	background-color: green;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	text-decoration: none;
+	font-size: 2rem;
+	color: #fff;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 1px solid #ccc;
+}
+
+.botao-salvar {
+	font-size: 1.2rem;
+	background-color: green;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	float: right;
+	padding: 10px;
+}
+
+.msg {
+	padding: 2px 10px;
+	width: 100%;
+	border-radius: 5px;
+	margin: 10px 0;
+}
