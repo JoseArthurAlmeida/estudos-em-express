@@ -12,6 +12,7 @@ function preencheTela(cursos) {
         <div class="curso">
 			<h2>${curso.nome}</h2>
 			<p>Carga horária ${curso.carga_horaria} horas</p>
+			<button class="apagar" type="button" id-curso="${curso.id}">Apagar</button>
 		</div>
         `;
 		divCursos.innerHTML += novoCursoHTML;
