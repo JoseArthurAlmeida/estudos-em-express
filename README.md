@@ -13,13 +13,13 @@ Este repositório contém um projeto de estudo que explora o desenvolvimento de 
 
 ## Funcionalidades
 
-- Operações de criação e leitura de dados.
+- Operações de criação, leitura e remoção de dados.
 - Integração com o PostgreSQL para persistência de dados.
 - Implementação de modelo de dados com o Sequelize.
 
 ## Funcionalidades futuras
 
-- Operações de atualização e remoção de dados.
+- Operação de atualização de dados.
 
 ## Como testar este app?
 
