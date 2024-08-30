@@ -17,12 +17,14 @@ router.get("/", async (req, res) => {
 router.post(
 	"/",
 
+	// Início da validação dos dados
 	body("nome").not().isEmpty().trim().escape(),
 	check("carga_horaria")
 		.not()
 		.isEmpty()
 		.matches(/\d/)
 		.withMessage("Deve ser um número válido!"),
+	// Final da validação dos dados
 
 	async (req, res) => {
 		const errors = validationResult(req);
@@ -38,5 +40,14 @@ router.post(
 		}
 	}
 );
+
+router.delete("/:id", async (req, res) => {
+	try {
+		await cursoService.deletar(req.params.id);
+		res.status(201).send(`Curso ${req.params.id} foi removido!`);
+	} catch (error) {
+		res.status(400).send(error.message);
+	}
+});
 
 export default router;

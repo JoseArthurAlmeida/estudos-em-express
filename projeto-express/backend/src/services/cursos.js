@@ -1,5 +1,3 @@
-import { where } from "sequelize";
-
 class CursoService {
 	constructor(CursoModel) {
 		this.curso = CursoModel;
@@ -24,6 +22,19 @@ class CursoService {
 			await this.curso.create(cursoDTO);
 		} catch (error) {
 			console.error(error.message);
+			throw error;
+		}
+	}
+
+	async deletar(cursoID) {
+		try {
+			await this.curso.destroy({
+				where: {
+					id: cursoID,
+				},
+			});
+		} catch (error) {
+			console.log(error);
 			throw error;
 		}
 	}
